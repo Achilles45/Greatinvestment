@@ -2,14 +2,14 @@ import firebase from 'firebase';
 import firestore from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAQ_t4jyfguCf_irrFcUtlUVZlCo4d4pp0",
-    authDomain: "investment-b4ce5.firebaseapp.com",
-    databaseURL: "https://investment-b4ce5.firebaseio.com",
-    projectId: "investment-b4ce5",
-    storageBucket: "investment-b4ce5.appspot.com",
-    messagingSenderId: "512890688581",
-    appId: "1:512890688581:web:864b50044833db246cbf2c",
-    measurementId: "G-5JQYYB4S2E"
+  apiKey: "AIzaSyC9LpEDVVkqatupI39sic5zny4_2RcFXs8",
+  authDomain: "great-investment.firebaseapp.com",
+  databaseURL: "https://great-investment.firebaseio.com",
+  projectId: "great-investment",
+  storageBucket: "great-investment.appspot.com",
+  messagingSenderId: "544336555625",
+  appId: "1:544336555625:web:bba6c2759b8702914c3cf8",
+  measurementId: "G-CX6MSZ1YDY"
 };
   // Initialize Firebase
   const firebaseApp = firebase.initializeApp(firebaseConfig);
