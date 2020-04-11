@@ -2,6 +2,10 @@
   <div class="signup">
       <!-- <Navbar /> -->
       <div class="form__wrapper">
+           <div class="logo pb-4">
+               <router-link to="/" class="logo"><img src="../assets/images/logo.png" class="logo-img" alt=""></router-link>
+               <hr>
+           </div>
          <div class="text">
               <h3>Create a free Account</h3>
           <p>It's very simple and fast to complete</p>

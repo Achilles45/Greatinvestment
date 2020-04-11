@@ -60,20 +60,10 @@
                         </div>
                       </div>
                     </div>
-                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="address">Office or Home Address *</label>
-                          <input type="text" class="form-control" disabled v-bind:value="address">
-                        </div>
-                      </div>
-                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="plan">Investment Plan *</label>
                           <input type="text" class="form-control" disabled v-bind:value="plan">
                         </div>
-                      </div>
-                    </div>
                   </form>
               </div>
             <!--End of Dashboard

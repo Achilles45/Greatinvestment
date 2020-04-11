@@ -2,6 +2,10 @@
   <div class="signup">
       <!-- <Navbar /> -->
       <div class="form__wrapper">
+           <div class="logo pb-4">
+               <router-link to="/" class="logo"><img src="../assets/images/logo.png" class="logo-img" alt=""></router-link>
+           </div>
+           <hr>
          <div class="text">
               <h3>Welcome Back!</h3>
           <p>Signin to continue</p>
@@ -73,7 +77,7 @@ methods:{
         padding: 3rem 2rem;
         border-radius: 4px;
         .text{
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
             h3{
                 font-weight: bold;
             }
