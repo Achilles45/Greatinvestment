@@ -6,7 +6,7 @@
               <h3>Create a free Account</h3>
           <p>It's very simple and fast to complete</p>
          </div>
-          <form action="">
+          <form @submit.prevent="register()">
               <div class="row">
                   <div class="col-md-6">
                       <div class="form-group">
@@ -65,6 +65,9 @@
                   </div>
               </div><br>
               <small>By clicking the create account button, you agree to our terms and conditions</small><br><br>
+              <div v-if="err" class="alert alert-danger">
+                  {{ err }}
+              </div>
               <button type="submit" class="account__btn">Create Account</button>
               <div class="bottom__text text-center">
                   <p>Already have an account? <router-link to="/signin" class="login_link">Login</router-link></p>
@@ -76,9 +79,48 @@
 
 <script>
 // import Navbar from '@/components/Navbar.vue';
+import db from '@/firebase/init'
+import firebase from 'firebase'
 export default {
-components:{
-    // Navbar
+data(){
+    return{
+        first_name:null,
+        last_name: null,
+        email:null,
+        phone:null,
+        plan:null,
+        password:null,
+        repeat_password:null,
+        err:null
+    }
+},
+methods:{
+    register(){
+        //Check if the form has been filled
+        if(!this.first_name || !this.last_name || !this.email || !this.phone || !this.plan || !this.password || !this.repeat_password){
+            this.err = 'Error. Please fill out the form first'
+        }else if(this.password != this.repeat_password){
+            this.err = 'Error. Your passwords do not match'
+        }else{
+            //Sign up the user and create a record for the user in firestore
+            firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+            .then(cred=>{
+             db.collection('users').add({
+                first_name:this.first_name,
+                last_name:this.last_name,
+                phone:this.phone,
+                email:this.email,
+                plan:this.plan,
+                user_id:cred.user.uid
+             })
+              this.$router.push({name: 'dashboard'})
+              console.log('Registration was successful')
+            })
+            .catch(err=>{
+                this.err = err.message
+            })
+        }
+    }
 }
 }
 </script>
@@ -94,7 +136,7 @@ components:{
     .form__wrapper{
         background: #fff;
         max-width: 550px;
-        margin:  3rem 2rem;
+        margin:  3rem 1rem;
         padding: 3rem 2rem;
         border-radius: 4px;
         .text{

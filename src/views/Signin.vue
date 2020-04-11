@@ -6,7 +6,7 @@
               <h3>Welcome Back!</h3>
           <p>Signin to continue</p>
          </div>
-          <form action="">
+          <form @submit.prevent="login()">
              <div class="form-group">
                  <label for="">Email Address</label>
                  <input type="text" class="form-control" placeholder="example@gmail.com" v-model="email">
@@ -14,6 +14,9 @@
               <div class="form-group">
                  <label for="">Password</label>
                  <input type="password" class="form-control" placeholder="Your password" v-model="password">
+             </div>
+             <div v-if="err" class="alert alert-danger">
+                 {{ err }}
              </div>
               <button type="submit" class="account__btn">Sign In</button>
               <div class="bottom__text text-center">
@@ -26,9 +29,31 @@
 
 <script>
 // import Navbar from '@/components/Navbar.vue';
+import firebase from 'firebase';
 export default {
-components:{
-    // Navbar
+data(){
+    return{
+        email:null,
+        password: null,
+        err:null
+    }
+},
+methods:{
+    login(){
+        //Check if the form has been filled out
+        if(!this.email || !this.password){
+            this.err = 'Please provide your credentials'
+        }else{
+            //Sign in the user to his/her dahboard
+            firebase.auth().signInWithEmailAndPassword(this.email, this.password)
+            .then((cred) =>{
+                   this.$router.push({name: 'dashboard'})
+                   console.log('Successful')
+               }).catch(err =>{
+                   this.err = 'Your credentials did not match. Please try again'
+               })
+        }
+    }
 }
 }
 </script>
