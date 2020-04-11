@@ -2,11 +2,11 @@
   <div class="signup">
       <!-- <Navbar /> -->
       <div class="form__wrapper">
-           <div class="logo pb-4">
-               <router-link to="/" class="logo"><img src="../assets/images/logo.png" class="logo-img" alt=""></router-link>
-           </div>
-           <hr>
          <div class="text">
+             <div class="logo pb-4">
+               <router-link to="/" class="logo"><img src="../assets/images/logo.png" class="logo-img" alt=""></router-link>
+               <hr>
+           </div>
               <h3>Welcome Back!</h3>
           <p>Signin to continue</p>
          </div>
@@ -70,6 +70,7 @@ methods:{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
     .form__wrapper{
         background: #fff;
         max-width: 550px;
