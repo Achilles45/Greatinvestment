@@ -9,7 +9,7 @@
           <form @submit.prevent="login()">
              <div class="form-group">
                  <label for="">Email Address</label>
-                 <input type="text" class="form-control" placeholder="example@gmail.com" v-model="email">
+                 <input type="email" class="form-control" placeholder="example@gmail.com" v-model="email">
              </div>
               <div class="form-group">
                  <label for="">Password</label>

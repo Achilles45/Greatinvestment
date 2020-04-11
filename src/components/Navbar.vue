@@ -2,7 +2,7 @@
    <div class="navbar__wrapper" id="navbar">
     <div class="navbar__content container d-flex justify-content-between align-items-center">
         <div class="navbar__brand pt-1">
-            <router-link to="/" class="logo"><h3><i class="fa fa-cubes"></i>&nbsp; Invest</h3></router-link>
+         <router-link to="/" class="logo"><img src="../assets/images/logo.png" class="logo-img" alt=""></router-link>
         </div>
         <ul class="d-flex justify-content-between pt-3 nav__links">
             <li><a href="#banner" class="link">Home</a></li>

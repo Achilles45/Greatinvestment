@@ -37,7 +37,7 @@
                       <div class="first d-flex">
                           <i class="fa fa-envelope"></i>
                           <div class="content">
-                              <p class="pl-4">nationgreat@gmail.com</p>
+                              <p class="pl-4 email">nationgreatinvestmentcompany@gmail.com</p>
                           </div>
                       </div>
                        <div class="first d-flex">
@@ -81,6 +81,9 @@ footer{
         text-transform: uppercase;
         font-size: .9rem;
         padding-bottom: 1rem;
+    }
+    .email{
+        font-size: .8rem;
     }
     ul{
         li a{
