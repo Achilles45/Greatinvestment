@@ -3,10 +3,10 @@
       <!-- <Navbar /> -->
       <div class="form__wrapper">
          <div class="text">
-             <div class="logo pb-4">
+             <!-- <div class="logo pb-4">
                <router-link to="/" class="logo"><img src="../assets/images/logo.png" class="logo-img" alt=""></router-link>
                <hr>
-           </div>
+           </div> -->
               <h3>Welcome Back!</h3>
           <p>Signin to continue</p>
          </div>
