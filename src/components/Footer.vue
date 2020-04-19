@@ -40,12 +40,12 @@
                               <p class="pl-4 email">nationgreatinvestmentcompany@gmail.com</p>
                           </div>
                       </div>
-                       <div class="first d-flex">
+                       <!-- <div class="first d-flex">
                           <i class="fa fa-phone"></i>
                           <div class="content">
                               <p class="pl-4">+234-8106-583-308</p>
                           </div>
-                      </div>
+                      </div> -->
                   </div>
               </div>
           </div><br>
