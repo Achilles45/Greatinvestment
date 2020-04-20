@@ -31,7 +31,7 @@
                       <div class="first d-flex">
                           <i class="fa fa-map-marker"></i>
                           <div class="content">
-                              <p class="pl-4">GRA Phase 2, Off Josh Avenue, beside Chicken Hills Eatery, Nasarawa State, Nigeria</p>
+                              <p class="pl-4">10 College Junction, Makurdi, Benue State, Nigeria</p>
                           </div>
                       </div>
                       <div class="first d-flex">
