@@ -43,7 +43,7 @@
                      <i class="fa fa-credit-card"></i>
                      <div class="content pl-4">
                          <h6>Expected Returns</h6>
-                         <h5>${{ unpaid }}</h5>
+                         <h5>${{ expectedReturns() }}</h5>
                      </div>
                   </div> -->
                     <div class="summary__card three">
@@ -80,7 +80,8 @@ export default {
             email:null,
             first_name:null,
             last_name:null,
-            plan:null
+            plan:null,
+            returns:null
         }
     },
      methods:{
@@ -94,6 +95,10 @@ export default {
            .then(()=>{
                this.$router.push({name: 'Signin'})
            })
+        },
+        //Function to calculate the expected return for the investor
+         expectedReturns:function(){
+            return this.returns
         },
     },
         mounted(){

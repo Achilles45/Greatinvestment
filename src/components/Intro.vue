@@ -12,17 +12,17 @@
               <div class="card__content">
                   <img src="../assets/images/growth.svg" class="card__icon" alt="">
                   <h4>Growth Opportunities</h4>
-                  <p>We provide you access to investments high growth opportunies that are exclusively out of reach for most people, ranging from agricultural trade, cryptocurrencies to real estate and others.</p>
+                  <p>We provide you access to investments and  high growth opportunies that are exclusively out of reach for most people, ranging from agricultural trade, cryptocurrencies to real estate and others.</p>
               </div>
                <div class="card__content">
                   <img src="../assets/images/safe.svg" class="card__icon" alt="">
                   <h4>Safe & Secured</h4>
-                  <p>All our systems are built with bank grade security to make sure all transactions on any of our pltforms are safe for our users. We and our fund partners maintain qulity security systems.</p>
+                  <p>All our systems are built with bank grade security to make sure all transactions on any of our platforms are safe for our users. We and our fund partners maintain quality security systems.</p>
               </div>
                <div class="card__content">
                   <img src="../assets/images/support.svg" class="card__icon" alt="">
                   <h4>24/7 Support</h4>
-                  <p>We have a top notch customer support and satisfaction deprtment that respond to all your queries in realtime. If you ever feel stuck, use the live chat widget here.</p>
+                  <p>We have a top notch customer support and satisfaction department that respond to all your queries in realtime. If you ever feel stuck, use the live chat widget below.</p>
               </div>
           </div>
       </div>
